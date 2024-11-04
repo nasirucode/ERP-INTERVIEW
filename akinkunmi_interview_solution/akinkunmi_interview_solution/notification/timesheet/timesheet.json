@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.status == 'Draft'",
+ "creation": "2024-11-04 15:42:25.750107",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Timesheet",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>{% if doc.status == 'Draft' %}\n    New Timesheet Created\n{% else %}\n    Timesheet {{ doc.status }}\n{% endif %}</p>\n",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2024-11-04 16:00:48.745071",
+ "modified_by": "Administrator",
+ "module": "Akinkunmi Interview Solution",
+ "name": "Timesheet",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Timesheet Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.name }}"
+}
