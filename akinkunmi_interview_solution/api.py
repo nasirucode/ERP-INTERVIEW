@@ -2,7 +2,7 @@ import frappe
 from frappe import _
 
 
-@frappe.whitelist(allow_guest = True)
+@frappe.whitelist()
 def customer_api():
     data = frappe.request.json
     customer = frappe.get_doc({'doctype': 'Customer API'})
