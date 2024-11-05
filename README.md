@@ -13,14 +13,17 @@ bench install-app akinkunmi_interview_solution
 ```
 ### API Usage
 To access the custom api
+```bash
 use http://{url}/api/method/{appName}.api.customer_api
+```
 
 Then pass the example json to the body using either PUT or POST
+```bash
 POST - to create customer,
 PUT - to update customer
 
 id for customer is mobile_number
-
+```
 
 ### Contributing
 
